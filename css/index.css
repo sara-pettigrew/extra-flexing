@@ -28,21 +28,59 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+.container {
+	margin: 0 auto;
+}
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.container {
+	width: 100%;
+	margin:0 auto;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 15px;
+}
+
+nav a {
+	text-decoration: none;
+	color: gray;
+}
+
+
+button {
+	font-size: 16px;
+	background-color: white;
+	border: 1px solid black;
+	padding 10px 20px;
+}
+
+button:hover {
+	background-color: lavender;
+	color: white;
 }
